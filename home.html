@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Nous sommes en maintenance</h2>
+        <img src="https://via.placeholder.com/500x300" alt="Maintenance en cours">
+        <p>Nous reviendrons bientôt ! Laissez-nous un message :</p>
+
+        <form action="https://formspree.io/f/ton-email" method="POST">
+            <input type="text" name="nom" placeholder="Votre Nom" required>
+            <input type="email" name="email" placeholder="Votre Email" required>
+            <textarea name="message" rows="4" placeholder="Votre Message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+</body>
+</html>
